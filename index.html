@@ -10,43 +10,49 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css" />
 
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
     <div class="wrapper">
-      <section class="card">
+      <main class="card">
+
         <div class="card__image">
-          <img
-            src="./images/image-header-mobile.jpg"
-            alt="Three people working in office"
-          />
+          <img src="/images/image-header-mobile.jpg" alt="Three people working in an office">
         </div>
+        
         <div class="card__text">
+
           <h1>
             Get <span class="card__text--highlight">insights</span> that help
             your business grow.
           </h1>
+
           <p>
             Discover the benefits of data analytics and make better decisions
             regarding revenue, customer experience, and overall efficiency.
           </p>
-          <ul class="card__stats">
-            <li class="card__stats--title">
-              <span class="card__stats--counter">10k+</span> companies
+
+          <ul class="card__stats--container">
+            <li class="card__stats companies">
+              <span class="card__stats--counter counter">10k+</span><span  class="card__stats--title"> companies</span> 
             </li>
-            <li class="card__stats--title">
-              <span class="card__stats--counter">314</span> templates
+            <li class="card__stats templates">
+              <span class="card__stats--counter counter">314</span><span class="card__stats--title"> templates</span> 
             </li>
-            <li class="card__stats--title">
-              <span class="card__stats--counter">12m+</span> queries
+            <li class="card__stats queries">
+              <span class="card__stats--counter counter">12m+</span><span class="card__stats--title"> queries</span> 
             </li>
           </ul>
+
         </div>
-        
+
     </div>
-   
-  </section>
+
+  </main>
   </body>
 </html>
