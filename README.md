@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![/stats-preview-page-screentshot.jpg]
+![Screenshot](/stats-preview-page-screenshot.jpg)
 
 ### Links
 
@@ -39,7 +39,7 @@ Users should be able to:
 - Semantic HTML5 markup
 - Flexbox
 - CSS Grid
-- SASS
+- SCSS / SASS
 
 ### What I learned
 
