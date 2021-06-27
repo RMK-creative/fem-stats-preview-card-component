@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](/stats-preview-page-screenshot.jpg)
+![Screenshot](./stats-preview-page-screenshot.jpg)
 
 ### Links
 
