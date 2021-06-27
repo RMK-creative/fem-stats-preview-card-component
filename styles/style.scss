@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
-
 // font-family: 'Inter', sans-serif;
 // font-family: 'Lexend Deca', sans-serif;
 
@@ -26,14 +24,6 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-size: 16px;
-
-  background-image: url(/design/mobile-design.jpg);
-
-  display: grid;
-}
-
-ul {
-  list-style: none;
 }
 
 a {
@@ -41,31 +31,129 @@ a {
   color: inherit;
 }
 
-img {
-  width: 100%;
-}
-
 .wrapper {
   min-height: 100vh;
+
   display: grid;
   place-content: center;
+
+  background-color: var(--color-v-dark-blue);
 }
 
 .card {
-  border: 2px dotted yellow;
-
-  margin: auto 1.5rem;
+  margin: 5rem 1.5rem;
   min-width: 20rem;
-
+  max-width: 31.25rem;
   border-radius: 0.5rem;
-  overflow: hidden;
-
   background-color: var(--color-dark-desaturated-blue);
 
-  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
+  color: white;
   font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+  background-color: var(--color-soft-violet); /* To work with mix-blend-mode */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply; /* for the overlay effect */
 }
 
 .card__text {
+  padding: 2rem 1.5rem;
+  max-width: 35rem;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+  grid-area: info;
+}
+
+.card__text--highlight {
+  color: var(--color-soft-violet);
+}
+
+h1 {
+  font-size: 1.7rem;
+  color: var(--color-white);
+}
+
+p {
+  font-size: 0.975rem;
+  color: var(--color-transparent-white-paragraph);
+
+  margin-top: 1rem;
+}
+
+.card__stats--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin-top: 2rem;
+}
+
+.card__stats {
+  margin-top: 1.5rem;
+  max-width: 5rem;
+
+  list-style: none;
+}
+
+.card__stats--title {
+  color: var(--color-transparent-white-stats);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.08rem;
+}
+
+.card__stats--counter {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 1150px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    line-height: 1.9;
+  }
+
+  .card {
+    display: grid;
+    grid-template-areas: "info img";
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 75vw;
+  }
+
+  .card__text {
+    text-align: left;
+    padding: 5rem;
+  }
+
+  .card__stats--container {
+    flex-direction: row;
+    justify-content: space-between;
+
+    text-align: left;
+
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0;
+  }
 }
