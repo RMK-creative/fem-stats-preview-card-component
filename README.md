@@ -1,6 +1,6 @@
 # Frontend Mentor - Meet landing page solution
 
-This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Stats Preview Card Component](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](/stats-preview-page-screenshot)
+![/stats-preview-page-screentshot.jpg]
 
 ### Links
 
